@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fcfcfc;
+}
+
+.bg-green { 
+    background-color: green; 
+    color: #fcfcfc;  
+    text-align: center; 
+    padding: 0.8rem 0.5rem;
+}
+.bg-red { 
+    background-color: red; 
+    color: #fcfcfc; 
+    text-align: center; 
+    padding: 0.8rem 0.5rem;
+}
+a { color: #416b6e; }
+
+#form {
+    max-width: 800px;
+    margin: auto;
+    padding: 3rem 0rem;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+}
+
+h1 {
+    color: darkcyan;
+    padding-bottom: 1rem;
+}
+
+.form-content label {
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
+    color: #416b6e;
+}
+
+.form-content input, .form-content button {
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    border: darkcyan 1px solid;
+    border-radius: 5px;
+}
+
+#btn {
+    width: 20%;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-weight: bolder;
+    color: #333333;
+    transition: 0.4s ease-in all;
+}
+
+#btn:hover {
+    background-color: darkcyan;
+    color: #fcfcfc;
+}
+
+#result {
+    max-width: 800px;
+    margin: auto;   
+}
+
+.heading{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    color: darkcyan;   
+}
+
+.entries {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    color: #333333;
+    padding: 0.4rem 0rem;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    #form, #result { max-width: 400px !important; }
+}
